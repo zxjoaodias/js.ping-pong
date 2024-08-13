@@ -1,0 +1,38 @@
+/*
+	CSS styles with p5 functions
+*/
+
+function setup() {
+	createCanvas(400, 200);
+	background(220);
+  ellipse(width/2, height/2, 100);
+  
+	/*
+	  	create a paragraph and assign it to a variable
+	*/
+	var p = createP('Hello :)');
+
+	/*
+		the style function in p5 sets a CSS style for an element
+		the first argument is the property
+		the following arguments are the values
+		most CSS properties use one value
+		like 
+			color: red;
+		but some take multiple values
+		like 
+			margin: 0 auto
+	*/
+
+	p.style('color', 'blue');
+	p.style('font-size', '50px');
+	p.style('font-family', 'Comic Sans MS');
+	p.style('background-color', 'hotpink');
+	p.style('padding', '1em');
+	p.style('width', '50%');
+
+	/*
+		substitute values for these properties to demonstrate 
+		the paragraph changing style
+	*/
+}
